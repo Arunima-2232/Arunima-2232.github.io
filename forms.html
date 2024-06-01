@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alien Abduction Order Form</title>
+	<link href="css/forms.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<section>
+			<h1>Alien Abduction Order Form</h1>
+			<p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
+			<form>
+				<fieldset>
+					<legend>Your contact information</legend>
+					<!-- And the legend is designed to say what this field set is doing here, -->
+					<label for="name">Your name </label>
+					<!-- for stands for what is the label for -->
+					<input text="text" id="name" name="name">
+					<!-- difference between id and name: id is used specifically used here with label tag, name is associated with processing script-When we click our submit button for our form, andthis whole contents of the form get sent to the server, right?The processing script on the server needs this name field inorder to do whatever it needs to do, make sense? -->
+					<!-- you can collect text using text attribute -->
+					<label for="phone">Phone number</label>
+					<input type="tel" id="phone" name="phone" placeholder="Don't forget area code">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email">
+				</fieldset> 
+				<fieldset>
+					<legend>About your abduction</legend>
+					<label for="date">Requested  date</label>
+					<input type="date" id="date" name="date">
+					<label for="qty">How many people would you like abducted?</label>
+					<!-- id has to be unique for every webpage, same for name, class can be used multiple times -->
+					<input type="number" id="qty" name="qty" min="1" max="10">
+					<p>What type of UFO do you prefer?</p>
+					<label>
+						<input type="radio" name="ufotype" value="Classic" checked>
+							Classic oval UFO
+					</label>
+					<label>
+						<input type="radio" name="ufotype" value="starwars">
+						Star Wars-style Imperial cruiser
+					</label>
+					<label>
+						<input type="radio" name="ufotype" value="viper">
+						Battlestar Galactica-style Viper
+					</label>
+					<label>
+						<input type="radio" name="ufotype" value="borgcube">
+						Borg-style cube
+					</label>
+						
+					<label for="abtype">What type of abduction experience do you want?</label>
+						<select id="abtype" name="abtype">
+							<option selected>Select one...</option>
+							<option value="solar">Tour of the solar system</option>
+							<option value="dinner">Alien dinner and discussion</option>
+							<option value="dance">Alien dance lessons</option>
+							<option value="whale">Whale watching</option>
+						</select>
+					<label for="comment">Special requests:</label>
+					<textarea id="comment" name="comment">Enter your ideas here</textarea>
+					<label>
+						<input type="checkbox" value="subscribe" name="subscribe" checked>
+						Add me to your email list
+					</label>
+					<!-- You have to have the ID if you're going to have to put it in the label.When the label tag goes around the whole unit like this,you don't have to have that for thing going on. -->
+				</fieldset>
+				<button type="submit">Place Your Order</button>
+				<!-- No ID, because there's no label.No name, because the button has nothing to with any values that we'retrying to process on the server.This is just sending the information over.And then therefore there's also no value for the button, right? -->
+			</form>				
+		
+		<div class="addresscontact">
+			<h3>Our Location</h3>
+			<address>
+				Frontend Masters &middot;
+				60 South 6th Street &middot;
+				Suite 3625 &middot;
+				Minneapolis, MN 55402
+			</address>
+		</div>
+	</section>
+	</div>
+</body>
+</html>
+
+
+
+
+
