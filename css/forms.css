@@ -71,7 +71,7 @@ button:hover{
 	color:rgb(255, 247, 248);
 }
 input:not([type="radio"]):not([type="checkbox"]),textarea,select{
-	/* So when you see square brackets like this,that is an indication that this is called an attribute selector. */
+
 	display:block;
 	margin:0.5rem 0 1rem 0;
 	width:20rem;
