@@ -13,12 +13,8 @@
 			<form>
 				<fieldset>
 					<legend>Your contact information</legend>
-					<!-- And the legend is designed to say what this field set is doing here, -->
 					<label for="name">Your name </label>
-					<!-- for stands for what is the label for -->
 					<input text="text" id="name" name="name">
-					<!-- difference between id and name: id is used specifically used here with label tag, name is associated with processing script-When we click our submit button for our form, andthis whole contents of the form get sent to the server, right?The processing script on the server needs this name field inorder to do whatever it needs to do, make sense? -->
-					<!-- you can collect text using text attribute -->
 					<label for="phone">Phone number</label>
 					<input type="tel" id="phone" name="phone" placeholder="Don't forget area code">
 					<label for="email">Email</label>
@@ -29,7 +25,6 @@
 					<label for="date">Requested  date</label>
 					<input type="date" id="date" name="date">
 					<label for="qty">How many people would you like abducted?</label>
-					<!-- id has to be unique for every webpage, same for name, class can be used multiple times -->
 					<input type="number" id="qty" name="qty" min="1" max="10">
 					<p>What type of UFO do you prefer?</p>
 					<label>
@@ -63,10 +58,8 @@
 						<input type="checkbox" value="subscribe" name="subscribe" checked>
 						Add me to your email list
 					</label>
-					<!-- You have to have the ID if you're going to have to put it in the label.When the label tag goes around the whole unit like this,you don't have to have that for thing going on. -->
 				</fieldset>
 				<button type="submit">Place Your Order</button>
-				<!-- No ID, because there's no label.No name, because the button has nothing to with any values that we'retrying to process on the server.This is just sending the information over.And then therefore there's also no value for the button, right? -->
 			</form>				
 		
 		<div class="addresscontact">
